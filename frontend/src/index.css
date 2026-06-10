@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.zip-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.zip-overlay.active {
+  display: flex;
+}
+
+.zip-card {
+  background: #111;
+  border: 1px solid #333;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.zip-progress-bg {
+  height: 8px;
+  background: #222;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.zip-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  width: 0%;
+  transition: width 0.3s ease;
+}

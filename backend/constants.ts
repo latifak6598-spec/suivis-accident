@@ -1,0 +1,4 @@
+export const PROTECTED_ADMIN_USERNAME = 'AMROUS ABDALLAH';
+export const SESSION_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+export const BCRYPT_ROUNDS = 12;
+export const DEFAULT_EXPIRY_DAYS = 365;
